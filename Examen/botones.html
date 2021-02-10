@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Creación de botones</title>
+    <link href="estilos.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <h1>MascotaPlus</h1>
+    <h5 id= "texto1"> Elige un animal</h5>
+
+    <button class="btg" id="perros">Perros</button>
+    <button class="btg" id="gatos">Gatos</button>
+    <img id="perroImg" style="display: none" src="perro.jpg" alt="perro">
+    <p id="fras1" style="display: none">Esta es la imagen de un perro sentado mirando de frente</p>
+    <img id="gatoImg" style="display: none" src="gato.jpg" alt="gato">
+    <p id="fras2"style="display: none">Esta es la imagen de un gato sentado mirando de frente</p>
+    <script type = "text/javascript">
+
+      $("#gatos").click(function() {
+      $("#perros").hide(1500);
+      });
+
+      $("#perros").click(function() {
+      $("#gatos").hide(1500);
+      });
+
+      $("#perros").click(function() {
+      $("#perroImg").show("slow");
+      $("#fras1").show("slow");
+      });
+
+      $("#gatos").click(function() {
+      $("#gatoImg").show("slow");
+      $("#fras2").show("slow");
+      });
+    </script>
+  </body>
+</html>

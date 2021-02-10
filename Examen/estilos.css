@@ -1,0 +1,17 @@
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+h5 {
+  font-family: verdana;
+  text-align: center;
+}
+.btg{
+  background-color:green;
+  color:white;
+  font-size:1.2em;
+  padding:12px;
+}
